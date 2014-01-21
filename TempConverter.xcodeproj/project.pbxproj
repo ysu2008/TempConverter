@@ -15,13 +15,14 @@
 		2F9DE318188EFBF900B1D60F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9DE317188EFBF900B1D60F /* AppDelegate.m */; };
 		2F9DE31B188EFBF900B1D60F /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F9DE319188EFBF900B1D60F /* Main_iPhone.storyboard */; };
 		2F9DE31E188EFBF900B1D60F /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F9DE31C188EFBF900B1D60F /* Main_iPad.storyboard */; };
-		2F9DE321188EFBF900B1D60F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9DE320188EFBF900B1D60F /* ViewController.m */; };
 		2F9DE323188EFBF900B1D60F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F9DE322188EFBF900B1D60F /* Images.xcassets */; };
 		2F9DE32A188EFBF900B1D60F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9DE329188EFBF900B1D60F /* XCTest.framework */; };
 		2F9DE32B188EFBF900B1D60F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9DE307188EFBF900B1D60F /* Foundation.framework */; };
 		2F9DE32C188EFBF900B1D60F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9DE30B188EFBF900B1D60F /* UIKit.framework */; };
 		2F9DE334188EFBF900B1D60F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F9DE332188EFBF900B1D60F /* InfoPlist.strings */; };
 		2F9DE336188EFBF900B1D60F /* TempConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9DE335188EFBF900B1D60F /* TempConverterTests.m */; };
+		2F9DE342188EFEA300B1D60F /* TempConverterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9DE340188EFEA300B1D60F /* TempConverterViewController.m */; };
+		2F9DE343188EFEA300B1D60F /* TempConverterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F9DE341188EFEA300B1D60F /* TempConverterViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,14 +48,15 @@
 		2F9DE317188EFBF900B1D60F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2F9DE31A188EFBF900B1D60F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		2F9DE31D188EFBF900B1D60F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		2F9DE31F188EFBF900B1D60F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2F9DE320188EFBF900B1D60F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2F9DE322188EFBF900B1D60F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2F9DE328188EFBF900B1D60F /* TempConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TempConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F9DE329188EFBF900B1D60F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		2F9DE331188EFBF900B1D60F /* TempConverterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TempConverterTests-Info.plist"; sourceTree = "<group>"; };
 		2F9DE333188EFBF900B1D60F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2F9DE335188EFBF900B1D60F /* TempConverterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TempConverterTests.m; sourceTree = "<group>"; };
+		2F9DE33F188EFEA300B1D60F /* TempConverterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempConverterViewController.h; sourceTree = SOURCE_ROOT; };
+		2F9DE340188EFEA300B1D60F /* TempConverterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempConverterViewController.m; sourceTree = SOURCE_ROOT; };
+		2F9DE341188EFEA300B1D60F /* TempConverterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TempConverterViewController.xib; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,12 +116,13 @@
 		2F9DE30D188EFBF900B1D60F /* TempConverter */ = {
 			isa = PBXGroup;
 			children = (
+				2F9DE33F188EFEA300B1D60F /* TempConverterViewController.h */,
+				2F9DE340188EFEA300B1D60F /* TempConverterViewController.m */,
+				2F9DE341188EFEA300B1D60F /* TempConverterViewController.xib */,
 				2F9DE316188EFBF900B1D60F /* AppDelegate.h */,
 				2F9DE317188EFBF900B1D60F /* AppDelegate.m */,
 				2F9DE319188EFBF900B1D60F /* Main_iPhone.storyboard */,
 				2F9DE31C188EFBF900B1D60F /* Main_iPad.storyboard */,
-				2F9DE31F188EFBF900B1D60F /* ViewController.h */,
-				2F9DE320188EFBF900B1D60F /* ViewController.m */,
 				2F9DE322188EFBF900B1D60F /* Images.xcassets */,
 				2F9DE30E188EFBF900B1D60F /* Supporting Files */,
 			);
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F9DE31E188EFBF900B1D60F /* Main_iPad.storyboard in Resources */,
+				2F9DE343188EFEA300B1D60F /* TempConverterViewController.xib in Resources */,
 				2F9DE323188EFBF900B1D60F /* Images.xcassets in Resources */,
 				2F9DE31B188EFBF900B1D60F /* Main_iPhone.storyboard in Resources */,
 				2F9DE312188EFBF900B1D60F /* InfoPlist.strings in Resources */,
@@ -253,8 +257,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F9DE321188EFBF900B1D60F /* ViewController.m in Sources */,
 				2F9DE318188EFBF900B1D60F /* AppDelegate.m in Sources */,
+				2F9DE342188EFEA300B1D60F /* TempConverterViewController.m in Sources */,
 				2F9DE314188EFBF900B1D60F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TempConverterViewController.h
 //  TempConverter
 //
 //  Created by Yang Su on 1/21/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface TempConverterViewController : UIViewController
 
 @end
